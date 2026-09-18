@@ -49,4 +49,12 @@
     <string name="lblID">Matricula</string>
     <string name="lblCarrera">Carrera</string>
     <string name="btnSave">Guardar</string>
+    <string name="lblSaludo">¡Hola, !</string>
+    <string name="lblTexto">Aquí está tu información</string>
+    <string name="lblNombre">Nombre:</string>
+    <string name="txtNombre" />
+    <string name="lblMatr">Matrícula:</string>
+    <string name="txtMatricula" />
+    <string name="lblCarreraInfo">Carrera:</string>
+    <string name="txtCarreraInfo" />
 </resources>

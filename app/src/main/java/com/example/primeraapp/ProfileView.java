@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Toast;
+import android.content.Intent;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -71,7 +72,19 @@ public class ProfileView extends AppCompatActivity {
         }
 
         if(validated.get()){
-            Toast.makeText(this,"Registrado", Toast.LENGTH_LONG).show();
+
+            String nombre = binding.hintName.getText().toString();
+            String matricula = binding.txtID.getText().toString();
+            String carrera = binding.cmbCarrera.getSelectedItem().toString();
+
+            Intent intent = new Intent(ProfileView.this, ProfileInfo.class);
+
+            intent.putExtra("nombre", nombre);
+            intent.putExtra("matricula", matricula);
+            intent.putExtra("carrera", carrera);
+
+            startActivity(intent);
+
         }
 
 
